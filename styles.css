@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     margin: 0;
     background:rgb(64, 107, 88);
@@ -42,7 +44,7 @@ input::placeholder {
 }
 
 .todo-item {
-    width: 100%;
+    width: 465px;
     padding: 0.5em;
     display: flex;
     justify-content: space-between;
@@ -67,6 +69,7 @@ input::placeholder {
     width: 400px;
     font-size: 15px;
     justify-content: space-between;
+    text-overflow: ellipsis;
 }
 
 .time {
@@ -90,13 +93,14 @@ input::placeholder {
     color: rgb(237, 237, 179);
 }
 
+
 @media (max-width: 510px) {
     .todo {
         width: 400px;
     }
 
     .todo-item {
-        padding: 1em;
+        width: 365px;;
     }
 }
 
@@ -106,6 +110,15 @@ input::placeholder {
     }
 
     .todo-item {
-        padding: 1em;
+        width: 265px;
+        height: 80px;
+    }
+
+    .todo-item-text {
+        margin: 0 auto;
+        width: 200px;
+        font-size: 15px;
+        justify-content: space-between;
+        overflow: hidden; 
     }
 }

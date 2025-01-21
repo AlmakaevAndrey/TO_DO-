@@ -63,8 +63,11 @@ const render = () => {
 
         todoElement.classList.add("todo-item");
         todoText.classList.add("todo-item-text");
+
         todoElement.append(todoText);
         todoElement.append(removeBtn);
+
+        removeBtn.classList.add("todo-btn");
 
         container.append(todoElement);
     });
